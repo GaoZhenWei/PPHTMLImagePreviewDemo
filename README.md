@@ -15,11 +15,11 @@ img.onclick = function() {
 	alert("test");
 }
 </pre>
-PS: 以上代码实现的: 点击< img>来弹出含`test`的提示框.
+PS: 以上代码实现的是点击< img>来弹出含`test`的提示框.
 
 * javascript与objc交互
 
-在iOS APP开发过程中，是通过UIWebView来加载html页面，因此javascript要与objc交互，桥梁应该就在UIWebview提供的API中，可以发现如下一些接口:
+在iOS APP开发过程中，是通过UIWebView来加载html页面，因此javascript要与objc交互，桥梁应该就在UIWebview提供的API中，通过查找，发现如下一些接口:
 <pre>
 //objc 传参给javascript
 - (NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;
