@@ -1,7 +1,7 @@
 # PPHTMLImagePreviewDemo
 
 ## 概述
-该DEMO主要用于演示iOS APP中点击HTML的图片来预览图片，效果可以查看下面的演示图
+该DEMO主要用于演示iOS APP中点击HTML的图片来实现本地预览，如下是演示图
 ![image](https://github.com/smallmuou/PPHTMLImagePreviewDemo/blob/master/PPHTMLImagePreviewDemo.gif)
 
 ## 原理阐述
