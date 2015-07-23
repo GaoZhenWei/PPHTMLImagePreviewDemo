@@ -15,7 +15,7 @@ img.onclick = function() {
 	alert("test");
 }
 </pre>
-PS: 以上代码实现的是点击< img>来弹出含`test`的提示框.
+PS: 以上代码实现的是点击< img id="test">来弹出含`test`的提示框. 当然可以通过getElementsByTagName，getElementsByClassName获取标签元素
 
 * javascript与objc交互
 
