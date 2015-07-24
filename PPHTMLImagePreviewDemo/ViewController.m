@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIButton+WebCache.h"
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
 
 @interface ViewController () <UIWebViewDelegate>
 
@@ -20,7 +21,12 @@
     
     self.webView.delegate = self;
     
-    self.imagePreviewButton.alpha = 0.0f;
+    self.imageView.alpha = 0.0f;
+    self.imageView.backgroundColor = [UIColor blackColor];
+    
+    UITapGestureRecognizer* gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onImagePreviewButtonPressed:)];
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:gesture];
     
     [self onLoadButtonPressed:nil];
 }
@@ -31,8 +37,9 @@
 }
 
 - (IBAction)onImagePreviewButtonPressed:(id)sender {
+    
     [UIView animateWithDuration:0.2f animations:^{
-        self.imagePreviewButton.alpha = 0.0f;
+        self.imageView.alpha = 0.0f;
     }];
 }
 
@@ -47,11 +54,11 @@
     if ([request.URL.scheme isEqualToString:@"image-preview"]) {
         NSString* path = [request.URL.absoluteString substringFromIndex:[@"image-preview:" length]];
         path = [path stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        
-        [self.imagePreviewButton sd_setImageWithURL:[NSURL URLWithString:path] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"default"]];
+
+        [self.imageView setImageWithURL:[NSURL URLWithString:path] placeholderImage:[UIImage imageNamed:@"default"] usingActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
         
         [UIView animateWithDuration:0.2f animations:^{
-            self.imagePreviewButton.alpha = 1.0f;
+            self.imageView.alpha = 1.0f;
         }];
         
         return NO;

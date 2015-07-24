@@ -15,8 +15,7 @@
 @property (nonatomic, retain) IBOutlet UITextField* urlTextField;
 
 //显示预览图
-@property (nonatomic, retain) IBOutlet UIButton* imagePreviewButton;
-
+@property (nonatomic, retain) IBOutlet UIImageView* imageView;
 
 @end
 

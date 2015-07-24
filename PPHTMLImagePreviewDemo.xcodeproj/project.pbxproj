@@ -32,6 +32,11 @@
 		E4EA388E1B5F6C9600B64BB9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EA387E1B5F6C9600B64BB9 /* UIView+WebCacheOperation.m */; };
 		E4EA38901B5F6E5B00B64BB9 /* default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4EA388F1B5F6E5B00B64BB9 /* default@2x.jpg */; };
 		E4EA38921B5F71B500B64BB9 /* black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4EA38911B5F71B500B64BB9 /* black@2x.png */; };
+		E4F5D3B41B61FCD500C88389 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E4F5D3AE1B61FCD500C88389 /* .gitignore */; };
+		E4F5D3B51B61FCD500C88389 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = E4F5D3AF1B61FCD500C88389 /* LICENSE.txt */; };
+		E4F5D3B61B61FCD500C88389 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D3B01B61FCD500C88389 /* README.md */; };
+		E4F5D3B71B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E4F5D3B11B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage.podspec */; };
+		E4F5D3B81B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D3B31B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +98,12 @@
 		E4EA387E1B5F6C9600B64BB9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		E4EA388F1B5F6E5B00B64BB9 /* default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "default@2x.jpg"; sourceTree = "<group>"; };
 		E4EA38911B5F71B500B64BB9 /* black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black@2x.png"; sourceTree = "<group>"; };
+		E4F5D3AE1B61FCD500C88389 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E4F5D3AF1B61FCD500C88389 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		E4F5D3B01B61FCD500C88389 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E4F5D3B11B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIActivityIndicator-for-SDWebImage.podspec"; sourceTree = "<group>"; };
+		E4F5D3B21B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		E4F5D3B31B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +145,7 @@
 		E4EA38361B5F644000B64BB9 /* PPHTMLImagePreviewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4F5D3AD1B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage */,
 				E4EA385D1B5F6C9600B64BB9 /* SDWebImage */,
 				E4EA383B1B5F644000B64BB9 /* AppDelegate.h */,
 				E4EA383C1B5F644000B64BB9 /* AppDelegate.m */,
@@ -213,6 +225,19 @@
 				E4EA387E1B5F6C9600B64BB9 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		E4F5D3AD1B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5D3AE1B61FCD500C88389 /* .gitignore */,
+				E4F5D3AF1B61FCD500C88389 /* LICENSE.txt */,
+				E4F5D3B01B61FCD500C88389 /* README.md */,
+				E4F5D3B11B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage.podspec */,
+				E4F5D3B21B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.h */,
+				E4F5D3B31B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.m */,
+			);
+			path = "UIActivityIndicator-for-SDWebImage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +324,10 @@
 				E4EA38431B5F644000B64BB9 /* Main.storyboard in Resources */,
 				E4EA38481B5F644000B64BB9 /* LaunchScreen.xib in Resources */,
 				E4EA38921B5F71B500B64BB9 /* black@2x.png in Resources */,
+				E4F5D3B41B61FCD500C88389 /* .gitignore in Resources */,
 				E4EA38451B5F644000B64BB9 /* Images.xcassets in Resources */,
+				E4F5D3B51B61FCD500C88389 /* LICENSE.txt in Resources */,
+				E4F5D3B71B61FCD500C88389 /* UIActivityIndicator-for-SDWebImage.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +347,7 @@
 			files = (
 				E4EA388C1B5F6C9600B64BB9 /* UIImageView+HighlightedWebCache.m in Sources */,
 				E4EA38801B5F6C9600B64BB9 /* NSData+ImageContentType.m in Sources */,
+				E4F5D3B61B61FCD500C88389 /* README.md in Sources */,
 				E4EA38861B5F6C9600B64BB9 /* SDWebImageManager.m in Sources */,
 				E4EA38841B5F6C9600B64BB9 /* SDWebImageDownloader.m in Sources */,
 				E4EA388B1B5F6C9600B64BB9 /* UIImage+WebP.m in Sources */,
@@ -329,6 +358,7 @@
 				E4EA38831B5F6C9600B64BB9 /* SDWebImageDecoder.m in Sources */,
 				E4EA388A1B5F6C9600B64BB9 /* UIImage+MultiFormat.m in Sources */,
 				E4EA38851B5F6C9600B64BB9 /* SDWebImageDownloaderOperation.m in Sources */,
+				E4F5D3B81B61FCD500C88389 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */,
 				E4EA383D1B5F644000B64BB9 /* AppDelegate.m in Sources */,
 				E4EA38881B5F6C9600B64BB9 /* UIButton+WebCache.m in Sources */,
 				E4EA38871B5F6C9600B64BB9 /* SDWebImagePrefetcher.m in Sources */,
@@ -534,6 +564,7 @@
 				E4EA38591B5F644000B64BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4EA385A1B5F644000B64BB9 /* Build configuration list for PBXNativeTarget "PPHTMLImagePreviewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +573,7 @@
 				E4EA385C1B5F644000B64BB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
